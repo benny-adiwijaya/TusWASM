@@ -24,7 +24,7 @@ function uploadFile() {
 
     upload = new tus.Upload(file,
         {
-            endpoint: 'files/',
+            endpoint: 'https://master.tus.io/files/',
             onError: onTusError,
             onProgress: onTusProgress,
             onSuccess: onTusSuccess,
